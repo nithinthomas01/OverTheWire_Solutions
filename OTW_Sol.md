@@ -19,7 +19,7 @@ LAB 8 --> 9
 Q)The password for the next level is stored in the file data.txt and is the 
 only line of text that occurs only once
 
-SOL:
+SOL: cat data.txt | sort | uniq -u
 
 ___________________________________________________________________________________________
 
@@ -27,7 +27,7 @@ LAB 9 --> 10
 Q)The password for the next level is stored in the file data.txt in one of the few 
 human-readable strings, preceded by several ‘=’ characters.
 
-SOl:
+SOl:  strings data.txt | grep "=="
 
 ___________________________________________________________________________________________
 
